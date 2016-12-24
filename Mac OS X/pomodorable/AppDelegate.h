@@ -10,6 +10,7 @@
 #import <AVFoundation/AVFoundation.h>
 
 #import "ChatController.h"
+#import "ShellController.h"
 #import "MonitorWindowController.h"
 #import "MASPreferencesWindowController.h"
 #import "HistoryWindowController.h"
@@ -39,6 +40,7 @@
     WindowController                *windowController;
     MASPreferencesWindowController  *preferencesWindow;
     ChatController                  *chatController;
+    ShellController                  *shellController;
     TaskSyncController              *taskSyncController;
     MonitorWindowController         *monitorWindowController;
     WelcomeWindowController         *welcomeWindowController;

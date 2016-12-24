@@ -85,6 +85,9 @@ void *kContextActivePanel = &kContextActivePanel;
     //set up chat integration controller
     chatController = [[ChatController alloc] init];
     
+    //set up shell integration controller
+    shellController = [[ShellController alloc] init];
+    
     //Calendar Controller
     calendarController = [[CalendarController alloc] init];
     
@@ -521,6 +524,12 @@ void *kContextActivePanel = &kContextActivePanel;
         if(playSound)
             [self.tickSound play];
     }
+
+    
+
+        
+        //if([[NSRunningApplication runningApplicationsWithBundleIdentifier:@"com.skype.skype"] count] != 0)
+           // [[ScriptManager sharedManager] executeScript:@"SkypeSetStatusBusy" withParameter:statusMessage];
     
 //    if(robotOnline)
 //        [RKRGBLEDOutputCommand sendCommandWithRed:0.5 green:0.5 blue:0.0];
